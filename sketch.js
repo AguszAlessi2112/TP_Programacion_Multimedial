@@ -14,12 +14,12 @@ function setup() {
   background(0); //fondo negro
   posX = random(width); //posx y posy van a ser un numero random entre 0 y el ancho o alto del canvas
   posY = random(height);
-  velX =  15; //la velocidad con la que va a moverese el circulo
-  velY =  15;
+  velX =  5; //la velocidad con la que va a moverese el circulo
+  velY =  5;
   posX2 = random(width); //o mismo que arriba
   posY2 = random(height);
-  velX2 = -15;
-  velY2 = -15;
+  velX2 = -5;
+  velY2 = -5;
   
 }
 function draw() {
@@ -31,9 +31,9 @@ function draw() {
   circle(mouseX, mouseY, 10); //circulo chico que sigue el mouse
   circle(posX, posY, 50); //circulo que aparece en random x y y
   circle(posX2, posY2, 50); // lo mismo
-  square(900, posY2, 100); //un cuadrado que solo se mueve en y, tiene x fija
-  square(posX, 400, 100); //un cuadrado que solo se mueve en x, tiene y fija
-  stroke(random(255), random(255), random(255)); //el color del borde de todo
+  square(600, posY2, 100); //un cuadrado que solo se mueve en y, tiene x fija
+  square(posX, 300, 100); //un cuadrado que solo se mueve en x, tiene y fija
+  stroke(random(0), random(0), random(130)); //el color del borde de todo
   strokeWeight(2); //ancho del borde
   
   posX = posX + velX; //a la posicion le sumo la velocidad para que se mueva
